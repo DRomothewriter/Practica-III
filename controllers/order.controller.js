@@ -4,8 +4,12 @@ const User = require('../models/user.model');
 
 exports.createOrder = async (req, res) => {
     try {
+        console.log(req.body)
         const { userId, shippingAddress, items } = req.body;
         const user = await User.findById(userId);
+        console.log(userId)
+        console.log(user)
+
         if (!user) return res.status(404).json({ message: 'user no found' });
 
         let subtotal = 0;

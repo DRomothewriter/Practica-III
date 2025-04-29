@@ -11,8 +11,6 @@ const OrderSchema = new mongoose.Schema({
     },
     items: [{
         product: { type: mongoose.Schema.Types.ObjectId, ref: 'Product', required: true },
-        name: String,
-        price: Number,
         quantity: Number
     }],
     subtotal: Number,
@@ -22,6 +20,24 @@ const OrderSchema = new mongoose.Schema({
 });
 
 module.exports = mongoose.model('Order', OrderSchema);
+
+/*
+{
+  
+  "userId":"68106157f6e8cfe4e0106d23",
+  "shippingAddress": {
+      "street": "123 Calle Principal",
+      "city": "Ciudad",
+      "state": "Estado",
+      "zip": "12345",
+      "country": "País"
+  },
+  "items":[{
+    "product":"68104e66a35e24813034f374",
+    "quantity":5
+  }]
+}
+   */
 
 
 

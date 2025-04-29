@@ -12,12 +12,9 @@ const productSchema = new mongoose.Schema({
 
 module.exports = mongoose.model('Product', productSchema);
 /*{
-    "name":"Pluma",
-    "description":"Bic azul",
-    "price": 20,
-    "stock":100,
-    "category":"school"
-  }
-      "email":"diego@gmail.com",
-  "password":"diego"
+  "name":"test",
+  "description":"test",
+  "price":10,
+  "stock":10,
+  "category":"test"
   */

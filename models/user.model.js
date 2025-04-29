@@ -27,3 +27,19 @@ userSchema.set('toJSON', {
 });
 
 module.exports = mongoose.model('User', userSchema);
+
+/*
+    {
+        "name":"test",
+        "email":"test@gmail.com",
+        "password":"test",
+        "role":"client"
+    }
+
+        {
+        "name":"admin",
+        "email":"admin@gmail.com",
+        "password":"admin",
+        "role":"admin"
+    }
+*/
